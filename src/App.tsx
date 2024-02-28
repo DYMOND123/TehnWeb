@@ -1,12 +1,16 @@
+// App.tsx
 import React from 'react';
-import './App.css';
+import MyCard from './MyCard';
+import PersonalDataForm from './PersonalDataForm';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      
+    <div className="app">
+      <h1>Personal Data Management</h1>
+      <PersonalDataForm />
+      <MyCard />
     </div>
   );
-}
+};
 
 export default App;
